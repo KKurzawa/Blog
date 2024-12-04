@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+form{
+  width: 40%;
+}
+.reg-log-input{
+  border: 1px solid rgba(0, 0, 0, 0.359);
+  outline: none;
+  width: 100%;
+  font-size: 1.5rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.reg-log-btn{
+  text-align: center;
+  background-color: black;
+  width: fit-content;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.disabled-reg-btn{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.354);
+  width: fit-content;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
