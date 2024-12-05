@@ -52,6 +52,7 @@ const Login = ({ props: {
                     placeholder="Email"
                     onChange={e => setEmail(e.target.value.toLowerCase())}
                     className="reg-log-input"
+                    autoComplete="false"
                 />
                 <input
                     type="password"
