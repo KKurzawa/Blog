@@ -7,6 +7,9 @@ import Register from './pages/Register'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import CreatePost from './pages/CreatePost'
+import SinglePost from './pages/SinglePost'
+import UpdatePost from './pages/UpdatePost'
+import ProfilePage from './pages/ProfilePage'
 
 const App = () => {
   const [username, setUsername] = useState('')
@@ -28,6 +31,7 @@ const App = () => {
   const [userId, setUserId] = useState('')
   const [loggedIn, setLoggedIn] = useState(false)
 
+  const [likes, setLikes] = useState(0)
 
   return (
     <UserContextProvider>
@@ -36,7 +40,6 @@ const App = () => {
           props={{
             loggedIn,
             setLoggedIn,
-            username
           }} />}>
           <Route index element={<Register
             props={{
@@ -67,24 +70,35 @@ const App = () => {
             }} />} />
           <Route path='/login' element={<Login
             props={{
-              email,
-              setEmail,
               password,
               setPassword,
               setUserId,
               setLoggedIn,
-              username
+              username,
+              setUsername
             }} />} />
           <Route path='/home' element={<Home
             props={{
               userId,
               username,
-              setUsername
+              likes,
+              setLikes
             }}
           />} />
           <Route path='/createPost' element={<CreatePost
             props={{
-              loggedIn
+              username
+            }}
+          />} />
+          <Route path='/singlePost/:id' element={<SinglePost
+            props={{
+              username
+            }}
+          />} />
+          <Route path='/updatePost/:id' element={<UpdatePost />} />
+          <Route path='/profilePage/:id' element={<ProfilePage
+            props={{
+              userId
             }}
           />} />
         </Route>

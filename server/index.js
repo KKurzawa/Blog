@@ -12,6 +12,7 @@ const { PORT, DBCONNECT } = require('./config/connect.js')
 
 app.use(express.json())
 app.use(cors())
+app.use(express.static('public'))
 app.use(userRouter)
 app.use(postRouter)
 

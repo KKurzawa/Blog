@@ -1,16 +1,14 @@
 const mongoose = require('mongoose')
 const { Schema, model } = mongoose
+const { ObjectId } = mongoose.Schema.Types
 
 const PostSchema = new Schema({
     title: String,
     summary: String,
     content: String,
-    cover: String,
-    likes: {
-        type: Number,
-        default: 0
-    },
-    author: { type: Schema.Types.ObjectId, ref: 'User' }
+    image: String,
+    likes: [String],
+    author: String
 }, {
     timestamps: true
 })

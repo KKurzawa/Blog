@@ -25,15 +25,15 @@ const registerUser = async (req, res) => {
 }
 
 const loginUser = async (req, res) => {
-    const { email, password } = req.body
-    const userDoc = await User.findOne({ email })
+    const { username, password } = req.body
+    const userDoc = await User.findOne({ username })
     const passOk = bcrypt.compareSync(password, userDoc.password)
     if (passOk) {
-        jwt.sign({ email, id: userDoc._id }, secret, {}, (err, token) => {
+        jwt.sign({ username, id: userDoc._id }, secret, {}, (err, token) => {
             if (err) throw err
             res.cookie('token', token).json({
                 id: userDoc._id,
-                email
+                username
             })
         })
     } else {
@@ -48,7 +48,7 @@ const logoutUser = (req, res) => {
 const getUsers = async (req, res) => {
     const userDoc = await User.find()
     res.json(userDoc)
-    console.log(userDoc)
+    // console.log(userDoc)
 }
 
 const getUser = async (req, res) => {
@@ -56,6 +56,11 @@ const getUser = async (req, res) => {
     const userDoc = await User.findById(id)
     res.json(userDoc)
 }
+
+// const getUserByEmail = async (req, res) => {
+//     const userDoc = await User.findOne({ "email": "jason@sample.com" })
+//     res.json(userDoc)
+// }
 
 const deleteUser = async (req, res) => {
     const { id } = req.params
