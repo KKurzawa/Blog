@@ -182,9 +182,30 @@ form{
   border-radius: 10px;
 }
 .post-title:hover{
-  background-color: #3f4144;
+  background-color: #252528;
   transition: 500ms ease-in-out;
   color: #949AA2;
+}
+
+.post-author{
+  transition: 500ms ease-in-out;
+  width: fit-content;
+  padding: 1px 5px 2px 5px;
+  border-radius: 10px;
+}
+
+.post-author:hover{
+  background-color: #252528;
+  transition: 500ms ease-in-out;
+  color: #949AA2;
+}
+
+.post-image{
+  transition: 500ms ease-in-out;
+}
+
+.post-image:hover{
+  filter: brightness(1.5);
 }
 
 .top-btn{

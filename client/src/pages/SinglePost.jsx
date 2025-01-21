@@ -99,7 +99,7 @@ const SinglePost = ({ props: { username } }) => {
                                 console.log(user)
                                 navigate(`/profilePage/${user._id}`)
                             })}
-                            className="text-2xl">{author}</button>
+                            className="post-author text-2xl">{author}</button>
                         <article className="flex items-baseline gap-2">
                             {likes.includes(username) ? (
                                 <>

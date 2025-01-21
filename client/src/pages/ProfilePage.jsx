@@ -50,7 +50,7 @@ const ProfilePage = () => {
                             <img
                                 src={'http://localhost:3000/Images/' + post.image}
                                 alt=""
-                                className="w-[20rem] h-[20rem] md:w-[35rem] md:h-[20rem] object-cover rounded-3xl"
+                                className="post-image w-[20rem] h-[20rem] md:w-[35rem] md:h-[20rem] object-cover rounded-3xl"
                             />
                         </Link>
                     </ul>
