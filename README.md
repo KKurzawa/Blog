@@ -5,18 +5,14 @@
 A full stack MERN app where users can register/login, post pictures/details of their gear, update/delete their own posts, and like/dislike other users posts.
 
 
-![screenshot1](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot1.png)
-![screenshot2](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot2.png)
-![screenshot3](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot3.png)
-![screenshot4](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot4.png)
-![screenshot5](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot5.png)
-![screenshot6](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot6.png)
+![screenshot1](https://github.com/KKurzawa/Blog/blob/main/client/public/Screenshot1.png)
+![screenshot2](https://github.com/KKurzawa/Blog/blob/main/client/public/Screenshot2.png)
+![screenshot3](https://github.com/KKurzawa/Blog/blob/main/client/public/Screenshot3.png)
+![screenshot4](https://github.com/KKurzawa/Blog/blob/main/client/public/Screenshot4.png)
+![screenshot5](https://github.com/KKurzawa/Blog/blob/main/client/public/Screenshot5.png)
+![screenshot6](https://github.com/KKurzawa/Blog/blob/main/client/public/Screenshot6.png)
 
-[Github Repository](https://github.com/KKurzawa/led-detroit)
-
-[Deployed Site](https://www.leddetroitband.com/)
-
-[Server Github Repository](https://github.com/KKurzawa/led-detroit-server)
+[Github Repository](https://github.com/KKurzawa/Blog)
 
 ## Credits
 
